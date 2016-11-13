@@ -1,0 +1,93 @@
+* {
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+nav {
+    display: -webkit-flex; /* Safari & iOS support */
+    display: flex;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: grey;
+
+}
+.container {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+}
+#logo {
+    font-family: 'Righteous', cursive;
+    color: black;
+    font-size: 40px;
+    border: 5px solid black;
+    border-radius: 50%;
+    padding: 2px;
+}
+nav a {
+    text-decoration: none;
+}
+#linksContainer {
+    margin-left: auto;
+    margin-right: 0px;
+    display: none;
+}
+#dropdownBtn {
+    border: none;
+    background-color: grey;
+}
+.dropdown {
+    margin-left: auto;
+    margin-right: 0px;
+}
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    right: 10px;
+    text-align: center;
+}
+.navLink {
+    color: black;
+    padding: 25px;
+    text-transform: uppercase;
+    display: none;
+}
+.dropdownContent a {
+    color: black;
+    padding: 25px;
+    text-transform: uppercase;
+    display: block;
+}
+.show {
+    display: block;
+}
+@media only screen and (min-width: 768px) {
+    #linksContainer {
+        display: flex;
+    }
+    .navLink {
+        display: inline;
+    }
+    .dropdown {
+        display: none;
+    }
+}
+/*
+#burgerContainer {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 20%;
+}
+*/
+#burgerContainer .navLink {
+    
+}
