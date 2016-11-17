@@ -7,10 +7,15 @@ html, body {
 nav {
     display: -webkit-flex; /* Safari & iOS support */
     display: flex;
-    height: 100px;
+    height: 75px;
     width: 100%;
     position: fixed;
     background-color: rgba(255, 255, 255, 0);
+}
+@media only screen and (min-width: 768px) {
+    nav {
+        height: 100px;
+    }
 }
 .container {
     display: flex;
@@ -33,15 +38,25 @@ nav {
 #tagline {
     flex-direction: column;
     padding-left: 10px;
-    font-size: 14px;
+    font-size: 10px;
+}
+@media only screen and (min-width: 768px) {
+    #tagline {
+        font-size: 14px;
+    }
 }
 #logo {
     font-family: 'Righteous', cursive;
-    font-size: 30px;
+    font-size: 20px;
     border: 5px solid #fff;
     border-radius: 50%;
     padding: 2px;
     color: #fff;
+}
+@media only screen and (min-width: 768px) {
+    #logo {
+        font-size: 24px;
+    }
 }
 nav a {
     text-decoration: none;
@@ -67,7 +82,7 @@ nav a {
 .dropdownContent {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.75);
     right: 10px;
     text-align: center;
     border: 1px solid #fff;
@@ -101,12 +116,9 @@ nav a {
     }
 }
 .jumbo {
-    background-color: #8a0000;
-    background: linear-gradient(to bottom right, #8a0000, #45008a);
-    background: -webklit-linear-gradient(top left, #8a0000, #45008a);
-    background: -o-linear-gradient(bottom right, #8a0000, #45008a);
-    background: -moz-linear-gradient(bottom right, #8a0000, #45008a);
-    height: 300px;
+    background-image: url("../images/computer_screen2_dark.png");
+    background-size: cover;    
+    height: 200px;
     display: -webkit-flex;
     display: flex;
 }
