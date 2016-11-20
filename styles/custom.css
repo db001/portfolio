@@ -5,7 +5,7 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 nav {
-    display: -webkit-flex; /* Safari & iOS support */
+    display: -webkit-flex;
     display: flex;
     height: 75px;
     width: 100%;
@@ -16,6 +16,9 @@ nav {
     nav {
         height: 100px;
     }
+}
+.showNav {
+    background-color: rgb(100, 100, 100);
 }
 .container {
     display: flex;
@@ -32,7 +35,7 @@ nav {
     }
 }
 #brand{
-    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
 }
 #tagline {
@@ -42,7 +45,7 @@ nav {
 }
 @media only screen and (min-width: 768px) {
     #tagline {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 #logo {
@@ -117,12 +120,13 @@ nav a {
 }
 .jumbo {
     background-image: url("../images/computer_screen2_dark.png");
-    background-size: cover;    
-    height: 200px;
+    background-size: cover;  
+    background-attachment: fixed;  
+    height: 300px;
     display: -webkit-flex;
     display: flex;
 }
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
     .jumbo {
         height: 500px;
     }
@@ -134,8 +138,67 @@ nav a {
     text-align: center;
     font-size: 12px;
 }
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
     #headline {
         font-size: 24px;
+    }
+}
+.project {
+    width: 80%;
+    padding: 30px 0;
+    margin: auto;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.projectImg {
+    margin-left: auto;
+    margin-right: auto;
+}
+.project img {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .project projectImg img {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.projectText h3 {
+    font-size: 1em;
+}
+.projectText {
+    text-align: center;
+}
+.projectText p {
+    font-size: 0.8em;
+}
+.skillsContainer {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.skill {
+    flex-shrink: 0.8;
+    font-size: 0.7em;
+    margin: 0 5px;
+    padding: 5px;
+    background-color:  rgba(150, 150, 255, 1);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+@media only screen and (min-width: 768px) {
+    .projectText h3 {
+        font-size: 1.25em;
+    }
+    .projectText p {
+        font-size: 1em;
+    }
+    .skill {
+        font-size: 1em;
     }
 }
