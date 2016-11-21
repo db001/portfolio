@@ -1,7 +1,3 @@
-function dropLinks() {
-    document.getElementById("navDropdown").classList.toggle("show");
-}
-
 var project = document.querySelector("#myProjects");
 
 window.onscroll = function() {

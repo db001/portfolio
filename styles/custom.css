@@ -3,6 +3,12 @@ html, body {
     padding: 0;
     /* font-family: 'Oswald', sans-serif; */
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background: white; /* For browsers that don't support gradient */
+    background: linear-gradient(to top left, #fff, #888);
+    background: -webkit-linear-gradient(bottom right, #fff, #888);  /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top left, #fff, #888);  /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top left, #fff, #888);  /* For Firefox 3.6 to 15 */
 }
 nav {
     display: -webkit-flex;
@@ -16,9 +22,6 @@ nav {
     nav {
         height: 100px;
     }
-}
-.showNav {
-    background-color: rgb(100, 100, 100);
 }
 .container {
     display: flex;
@@ -67,55 +70,21 @@ nav a {
 #linksContainer {
     margin-left: auto;
     margin-right: 0px;
-    display: none;
     color: #fff;
-}
-#dropdownBtn {
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-    color: #fff;
-}
-#dropdownBtn:focus {
-    outline: 0;
-}
-.dropdown {
-    margin-left: auto;
-    margin-right: 0px;    
-}
-.dropdownContent {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.75);
-    right: 10px;
-    text-align: center;
-    border: 1px solid #fff;
-    margin-top: 5px;
 }
 .navLink {
-    color: #fff;
-    padding: 25px;
-    text-transform: uppercase;
-    display: none;
+    display: inline;
 }
-.dropdownContent a {
-    color: #fff;
-    padding: 10px;
-    text-transform: uppercase;
-    display: block;
-    font-size: 11px;
-}
-.show {
-    display: block;
+.navLink img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
 }
 @media only screen and (min-width: 768px) {
-    #linksContainer {
-        display: flex;
-    }
-    .navLink {
-        display: inline;
-    }
-    .dropdown {
-        display: none;
+    .navLink img {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
     }
 }
 .jumbo {
@@ -143,6 +112,10 @@ nav a {
         font-size: 24px;
     }
 }
+#aboutme {
+    width: 80%;
+    margin: auto;
+}
 .project {
     width: 80%;
     padding: 30px 0;
@@ -151,6 +124,21 @@ nav a {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+}
+@media only screen and (min-width: 1024px) {
+    #myProjects {
+        display: -ms-flex;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+    .project {
+        width: 28%;
+        padding: 30px 0;
+        margin: 25px;        
+    }
 }
 .projectImg {
     margin-left: auto;
@@ -166,8 +154,17 @@ nav a {
         margin-right: auto;
     }
 }
-.projectText h3 {
+.projectText a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+.projectText a h3 {
     font-size: 1em;
+}
+@media only screen and (min-width: 768px) {
+    .projectText a h3 {
+        font-size: 1.2em;
+    }
 }
 .projectText {
     text-align: center;

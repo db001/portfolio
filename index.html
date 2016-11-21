@@ -37,66 +37,134 @@
                     </div>
                 </div>
                 <div id="linksContainer">
-                    <a href="#" class="navLink">About</a>
-                    <a href="#" class="navLink">Projects</a>
-                    <a href="#" class="navLink">Contact</a>
-                </div>
-                <div class="dropdown">
-                    <button id="dropdownBtn" onclick="dropLinks()">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </button>
-                    <div id="navDropdown" class="dropdownContent">
-                        <a href="#" class="navLink">About</a>
-                        <a href="#" class="navLink">Projects</a>
-                        <a href="#" class="navLink">Contact</a>
-                    </div>
-                </div>
+                    <a href="https://uk.linkedin.com/in/david-bennett-5a8a88117" target="_blank" class="navLink">
+                        <img src="./images/linked_in_inverse.png" alt="Linked In">
+                    </a>
+                    <a href="https://github.com/db001" target="_blank" class="navLink">
+                        <img src="./images/github_inverse.png" alt="Github">
+                    </a>
+                    <a href="http://codepen.io/db001/" target="_blank" class="navLink">
+                        <img src="./images/codepen_inverse.png" alt="code pen">
+                    </a>
+                </div>                
             </div>
         </nav>
         <div class="jumbo">
             <div id="headline">
                 <h2>Front-end Web Development</h2>
-                <p>HTML&nbsp;&nbsp;&#149;&nbsp;&nbsp;CSS&nbsp;&nbsp;&#149;  JavaScript&nbsp;&nbsp;&#149;&nbsp;&nbsp;Query&nbsp;&nbsp;&#149;&nbsp;&nbsp;Bootstrap</p>
+                <p>HTML&nbsp;&nbsp;&#149;&nbsp;&nbsp;CSS&nbsp;&nbsp;&#149;  JavaScript&nbsp;&nbsp;&#149;&nbsp;&nbsp;jQuery&nbsp;&nbsp;&#149;&nbsp;&nbsp;Bootstrap</p>
                 <p id="aboutme">I'm a web developer from Luton in the UK.  I'm passionate about coding and enjoy creating beautiful, responsive web apps.</p>
             </div>
         </div>
 
-        <div id="myProjects">
+        <h2>My Projects</h2>
+
+        <div id="myProjects">           
+            
             <div class="project">
-            <div class="projectImg">
-                <img src="./images/coopers_screen.png" alt="Coopers Cricket Club Website">
-            </div>
-            <div class="projectText">
-                <h3>Ashridge Coopers Cricket Club website</h3>
-                <p>A website for my local cricket club.  Created using Bootstrap with HTML, CSS and jQuery. Angular was then added to enable easier updating of fixtures and statistics (and because I wnated to use it somewhere!).  Hosted on Digital Ocean using Apache.</p>
-                <div class="skillsContainer">
-                    <div class="skill">HTML</div>
-                    <div class="skill">CSS</div>
-                    <div class="skill">JavaScript</div>
-                    <div class="skill">jQuery</div>
-                    <div class="skill">Angular</div>
-                    <div class="skill">Bootstrap</div>
+                <div class="projectImg">
+                    <img src="./images/coopers_screen.png" alt="Coopers Cricket Club Website">
+                </div>
+                <div class="projectText">
+                    <a href="http://www.cooperscricket.co.uk" target="_blank">
+                        <h3>Ashridge Coopers Cricket Club website
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </h3>
+                    </a>
+                    <p>A website for my local cricket club.  Created using Bootstrap with HTML, CSS and jQuery. Angular was then added to enable easier updating of fixtures and statistics (and because I wanted to use it somewhere!).  Hosted on Digital Ocean using Apache.</p>
+                    <div class="skillsContainer">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">jQuery</div>
+                        <div class="skill">Angular</div>
+                        <div class="skill">Bootstrap</div>
+                    </div>
                 </div>
             </div>
-            </div>
+
             <div class="project">
-            <div class="projectImg">
-                <img src="./images/coopers_screen.png" alt="Coopers Cricket Club Website">
-            </div>
-            <div class="projectText">
-                <h3>Ashridge Coopers Cricket Club website</h3>
-                <p>A website for my local cricket club.  Created using Bootstrap with HTML, CSS and jQuery. Angular was then added to enable easier updating of fixtures and statistics (and because I wnated to use it somewhere!).  Hosted on Digital Ocean using Apache.</p>
-                <div class="skillsContainer">
-                    <div class="skill">HTML</div>
-                    <div class="skill">CSS</div>
-                    <div class="skill">JavaScript</div>
-                    <div class="skill">jQuery</div>
-                    <div class="skill">Angular</div>
-                    <div class="skill">Bootstrap</div>
+                <div class="projectImg">
+                    <img src="./images/wiki_viewer.png" alt="Wikipedia Viewer">
+                </div>
+                <div class="projectText">
+                    <a href="http://codepen.io/db001/full/dGxavg//" target="_blank">
+                        <h3>Wikipedia Viewer
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </h3>
+                    </a>
+                    <p>A project for FreeCodeCamp's Front-end certificate, this app allows the user to search Wikipedia and returns the top ten results.</p>
+                    <div class="skillsContainer">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">jQuery</div>
+                        <div class="skill">APIs</div>
+                    </div>
                 </div>
             </div>
+
+            <div class="project">
+                <div class="projectImg">
+                    <img src="./images/timestamp.png" alt="Timestamp Microservice">
+                </div>
+                <div class="projectText">
+                    <a href="https://timestamp-microservice-v987.herokuapp.com/" target="_blank">
+                        <h3>Timestamp Microservice
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </h3>
+                    </a>
+                    <p>Using Node and Express, this app returns the Unix and Natural timestamps depending on the string passed as a parameter in the URL.</p>
+                    <div class="skillsContainer">
+                        <div class="skill">Node</div>
+                        <div class="skill">Express</div>
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                    </div>
+                </div>
             </div>
-        </div>
+
+            <div class="project">
+                <div class="projectImg">
+                    <img src="./images/starwars.png" alt="Star Wars Top Trumps">
+                </div>
+                <div class="projectText">
+                    <a href="http://codepen.io/db001/full/BzAmYV/" target="_blank">
+                        <h3>Star Wars Top Trumps Game
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </h3>
+                    </a>
+                    <p>A simple game I created to practice making multiple API calls and using Materialize CSS.</p>
+                    <div class="skillsContainer">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">jQuery</div>
+                        <div class="skill">Materialize</div>
+                        <div class="skill">APIs</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectImg">
+                    <img src="./images/header_parser.png" alt="HTTP Header Parsing Site">
+                </div>
+                <div class="projectText">
+                    <a href="https://fcc-header-parser-v987.herokuapp.com/" target="_blank">
+                        <h3>HTTP Headers Parsing Website
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </h3>
+                    </a>
+                    <p>An app that displays the user's operating system, language and IP address. Built as part of FreeCodeCamps back-end certificate.  Hosted on Heroku.</p>
+                    <div class="skillsContainer">
+                        <div class="skill">Node</div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End of projects -->
 
     </body>
     <!-- My scripts -->
