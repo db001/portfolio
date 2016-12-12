@@ -1,3 +1,8 @@
+// To do
+    
+// Laptop pics - remove white 'shadow'
+
+
 var project = document.querySelector("#myProjects");
 
 window.onscroll = function() {
