@@ -1,0 +1,25 @@
+.jumbo {
+    background-image: url("../images/computer_screen2_dark.png");
+    background-size: cover;  
+    background-attachment: fixed;  
+    height: 300px;
+    display: -webkit-flex;
+    display: flex;
+}
+@media only screen and (min-width: 768px) {
+    .jumbo {
+        height: 500px;
+    }
+}
+#headline {
+    margin: 0 auto;
+    align-self: center;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+@media only screen and (min-width: 768px) {
+    #headline {
+        font-size: 24px;
+    }
+}
