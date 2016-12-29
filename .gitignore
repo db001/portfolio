@@ -3,5 +3,5 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 
-node_modules
-.sass-cache
+node_modules/
+.sass-cache/
