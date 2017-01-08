@@ -9,32 +9,24 @@
   "author": "db",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^3.13.0",
     "grunt": "^1.0.1",
-<<<<<<< HEAD
-    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-sass": "latest",
     "grunt-contrib-watch": "^1.0.0",
-=======
-    "grunt-contrib-sass": "latest"
+    "grunt-eslint": "^19.0.0"
   },
-  "dependencies": {
->>>>>>> 5d9eb5bc95a75aff088e53e94007eca41424e9f5
-    "grunt-browser-sync": "^2.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/db001/portfolio.git"
-<<<<<<< HEAD
-  },
-  "bugs": {
-    "url": "https://github.com/db001/portfolio/issues"
-  },
-  "homepage": "https://github.com/db001/portfolio#readme",
   "dependencies": {
     "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0"
-=======
->>>>>>> 5d9eb5bc95a75aff088e53e94007eca41424e9f5
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/db001/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/db001/portfolio/issues"
+  },
+  "homepage": "https://github.com/db001/portfolio#readme"
 }

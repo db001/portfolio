@@ -1,5 +1,5 @@
 // To do
-    
+
 // Laptop pics - remove white 'shadow'
 
 
@@ -11,7 +11,7 @@ window.onscroll = function() {
     var navbar = document.getElementsByTagName("nav")[0]
     if (top < 0 && Math.abs(top / 100) < 0.8) {
         navbar.style.backgroundColor = "rgba(0, 0, 0, " + Math.abs(top / 100) + ")";
-    };
+    }
 }
 
 window.onscroll();
