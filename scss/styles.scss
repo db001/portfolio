@@ -1,4 +1,6 @@
 @import 'globals';
+@import 'generic';
+@import 'elements';
 @import 'nav';
 @import 'jumbo';
 
@@ -49,7 +51,7 @@
     }
 }
 .projectText a {
-    color: rgba(0, 0, 0, 1);
+    color: $font-color;
 }
 .projectText a h3 {
     font-size: 1em;
@@ -79,9 +81,10 @@
     font-size: 0.7em;
     margin: 5px 5px;
     padding: 5px;
-    background-color:  rgba(153, 204, 255, 1);
-    color: rgb(0, 0, 0);
+    background-color:  $secondary;
+    color: $font-color;
     border-radius: 5px;
+    border: 1px solid $secondary;
 }
 @media only screen and (min-width: 768px) {
     .projectText h3 {

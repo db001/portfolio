@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html, body {
   margin: 0;
   padding: 0;
-  /* font-family: 'Oswald', sans-serif; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   background: white;
   /* For browsers that don't support gradient */
@@ -15,7 +15,9 @@ html, body {
   /* For Firefox 3.6 to 15 */ }
 
 h2 {
-  text-align: center; }
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0; }
 
 p {
   text-align: center; }
@@ -186,7 +188,8 @@ nav {
   padding: 5px;
   background-color: #99ccff;
   color: black;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: 1px solid #99ccff; }
 
 @media only screen and (min-width: 768px) {
   .projectText h3 {
