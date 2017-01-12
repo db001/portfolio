@@ -1,29 +1,51 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Righteous");
 html, body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  background: white;
+  background: #444;
   /* For browsers that don't support gradient */
-  background: linear-gradient(to top left, #fff, #888);
-  background: -webkit-linear-gradient(bottom right, #fff, #888);
+  background: linear-gradient(to top left, #444, #fff);
+  background: -webkit-linear-gradient(bottom right, #444, #fff);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top left, #fff, #888);
+  background: -o-linear-gradient(top left, #444, #fff);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top left, #fff, #888);
-  /* For Firefox 3.6 to 15 */ }
+  background: -moz-linear-gradient(top left, #444, #fff);
+  /* For Firefox 3.6 to 15 */
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
 
 h2 {
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 0; }
+  font-family: "Righteous", cursive; }
+
+h3 {
+  color: black;
+  margin: 0;
+  margin-top: .75em;
+  font-family: "Righteous", cursive; }
 
 p {
-  text-align: center; }
+  text-align: center;
+  margin-top: .75em;
+  font-size: 0.8em; }
 
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1em; } }
 a {
   text-decoration: none; }
+
+a h3:hover {
+  color: #fff; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(153, 204, 255, 0), rgba(153, 204, 255, 0.75), rgba(153, 204, 255, 0)); }
 
 nav {
   display: -webkit-flex;
@@ -37,6 +59,7 @@ nav {
   nav {
     height: 100px; } }
 .container {
+  display: -webkit-flex;
   display: flex;
   width: 100%;
   padding: 0 20px;
@@ -110,68 +133,53 @@ nav {
 #headline {
   margin: 0 auto;
   align-self: center;
-  color: #fff;
-  font-size: 12px; }
+  color: #fff; }
 
 @media only screen and (min-width: 768px) {
   #headline {
     font-size: 24px; } }
 #aboutme {
-  width: 80%;
+  width: 100%;
   margin: auto; }
+  #aboutme p {
+    width: 80%;
+    margin: auto; }
 
 .project {
-  width: 80%;
-  padding: 30px 0;
+  width: 100%;
   margin: auto;
+  margin-bottom: 35px;
+  padding-top: 25px;
   display: -webkit-flex;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column; }
 
-#myProjects {
-  margin: 40px; }
+.projectImg, .projectText {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin: auto; }
+  .projectImg img, .projectText img {
+    width: 80%;
+    margin: auto; }
 
-@media only screen and (min-width: 1024px) {
-  #myProjects {
-    display: -ms-flex;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: center; }
+.projectText {
+  flex-direction: column;
+  width: 80%; }
+  .projectText h2 {
+    color: black; }
 
+@media only screen and (min-width: 768px) {
   .project {
-    width: 28%;
-    padding: 30px 0;
-    margin: 25px; } }
-.projectImg {
-  margin-left: auto;
-  margin-right: auto; }
+    -ms-flex-direction: row;
+    flex-direction: row; }
 
-.project img {
-  width: 100%; }
-
-@media only screen and (min-width: 768px) {
-  .project .projectImg img {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto; } }
-.projectText a {
-  color: black; }
-
-.projectText a h3 {
-  font-size: 1em; }
-
-@media only screen and (min-width: 768px) {
-  .projectText a h3 {
-    font-size: 1.2em; } }
-.projectText p {
-  font-size: 0.8em; }
-
-.projectText a h3:hover {
-  color: #4b4b4b; }
-
+  .projectImg, .projectText {
+    width: 50%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center; } }
 .skillsContainer {
   display: -webkit-flex;
   display: flex;
@@ -192,8 +200,66 @@ nav {
   border: 1px solid #99ccff; }
 
 @media only screen and (min-width: 768px) {
-  .projectText h3 {
-    font-size: 1.25em; }
+  .skill {
+    font-size: 0.85em; } }
+/*
+#myProjects {
+    margin: 40px;
+}
 
-  .projectText p, .skill {
-    font-size: 1em; } }
+@media only screen and (min-width: 1024px) {
+    #myProjects {
+        display: -ms-flex;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+    .project {
+        width: 28%;
+        padding: 30px 0;
+        margin: 25px;
+    }
+}
+.projectImg {
+    margin-left: auto;
+    margin-right: auto;
+}
+.project img {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .project .projectImg img {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.projectText a {
+    color: $font-color;
+}
+.projectText a h3 {
+    font-size: 1em;
+}
+@media only screen and (min-width: 768px) {
+    .projectText a h3 {
+        font-size: 1.2em;
+    }
+}
+.projectText p {
+    font-size: 0.8em;
+}
+.projectText a h3:hover {
+    color: rgba(75, 75, 75, 1);
+}
+
+@media only screen and (min-width: 768px) {
+    .projectText h3 {
+        font-size: 1.25em;
+    }
+    .projectText p, .skill {
+        font-size: 1em;
+    }    
+}
+*/
