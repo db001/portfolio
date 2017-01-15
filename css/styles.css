@@ -39,7 +39,7 @@ p {
 a {
   text-decoration: none; }
 
-a h3:hover {
+a:hover, a h3:hover {
   color: #fff; }
 
 hr {
@@ -47,6 +47,32 @@ hr {
   height: 1px;
   background-image: linear-gradient(to right, rgba(153, 204, 255, 0), rgba(153, 204, 255, 0.75), rgba(153, 204, 255, 0)); }
 
+#aboutme {
+  width: 100%;
+  margin: auto; }
+  #aboutme p {
+    width: 80%;
+    margin: auto; }
+
+.jumbo {
+  background-image: url("../images/computer_screen2_dark.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+  display: -webkit-flex;
+  display: flex; }
+
+@media only screen and (min-width: 768px) {
+  .jumbo {
+    height: 500px; } }
+#headline {
+  margin: 0 auto;
+  align-self: center;
+  color: #fff; }
+
+@media only screen and (min-width: 768px) {
+  #headline {
+    font-size: 24px; } }
 nav {
   display: -webkit-flex;
   display: flex;
@@ -119,32 +145,6 @@ nav {
     width: 30px;
     height: 30px;
     margin: 10px; } }
-.jumbo {
-  background-image: url("../images/computer_screen2_dark.png");
-  background-size: cover;
-  background-attachment: fixed;
-  height: 300px;
-  display: -webkit-flex;
-  display: flex; }
-
-@media only screen and (min-width: 768px) {
-  .jumbo {
-    height: 500px; } }
-#headline {
-  margin: 0 auto;
-  align-self: center;
-  color: #fff; }
-
-@media only screen and (min-width: 768px) {
-  #headline {
-    font-size: 24px; } }
-#aboutme {
-  width: 100%;
-  margin: auto; }
-  #aboutme p {
-    width: 80%;
-    margin: auto; }
-
 .project {
   width: 100%;
   margin: auto;
@@ -196,70 +196,8 @@ nav {
   padding: 5px;
   background-color: #99ccff;
   color: black;
-  border-radius: 5px;
-  border: 1px solid #99ccff; }
+  border-radius: 5px; }
 
 @media only screen and (min-width: 768px) {
   .skill {
     font-size: 0.85em; } }
-/*
-#myProjects {
-    margin: 40px;
-}
-
-@media only screen and (min-width: 1024px) {
-    #myProjects {
-        display: -ms-flex;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin: auto;
-        justify-content: center;
-    }
-    .project {
-        width: 28%;
-        padding: 30px 0;
-        margin: 25px;
-    }
-}
-.projectImg {
-    margin-left: auto;
-    margin-right: auto;
-}
-.project img {
-    width: 100%;
-}
-@media only screen and (min-width: 768px) {
-    .project .projectImg img {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-.projectText a {
-    color: $font-color;
-}
-.projectText a h3 {
-    font-size: 1em;
-}
-@media only screen and (min-width: 768px) {
-    .projectText a h3 {
-        font-size: 1.2em;
-    }
-}
-.projectText p {
-    font-size: 0.8em;
-}
-.projectText a h3:hover {
-    color: rgba(75, 75, 75, 1);
-}
-
-@media only screen and (min-width: 768px) {
-    .projectText h3 {
-        font-size: 1.25em;
-    }
-    .projectText p, .skill {
-        font-size: 1em;
-    }    
-}
-*/

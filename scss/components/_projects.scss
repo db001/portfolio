@@ -1,0 +1,42 @@
+.project {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 35px;
+    padding-top: 25px;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.projectImg, .projectText {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+    img {
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+.projectText {
+    flex-direction: column;
+    width: 80%;
+    h2 {
+        color: black;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .project {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .projectImg, .projectText {
+    width: 50%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    }
+}

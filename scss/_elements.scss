@@ -23,7 +23,7 @@ p {
 a {
     text-decoration: none;
 }
-a h3:hover {
+a:hover, a h3:hover {
     color: #fff;
 }
 hr {
