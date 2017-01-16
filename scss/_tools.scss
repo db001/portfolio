@@ -12,3 +12,9 @@
     background: -o-linear-gradient(top left, $bg-grad-color1, $bg-grad-color2);  /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(top left, $bg-grad-color1, $bg-grad-color2);  /* For Firefox 3.6 to 15 */
 }
+
+@mixin box-s($shadow-params) {
+    -webkit-box-shadow: $shadow-params;
+    -moz-box-shadow: $shadow-params;
+    box-shadow: $shadow-params;
+}

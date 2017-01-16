@@ -5,14 +5,14 @@ html, body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  background: #444;
+  background: #777799;
   /* For browsers that don't support gradient */
-  background: linear-gradient(to top left, #444, #fff);
-  background: -webkit-linear-gradient(bottom right, #444, #fff);
+  background: linear-gradient(to top left, #777799, #dedeff);
+  background: -webkit-linear-gradient(bottom right, #777799, #dedeff);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top left, #444, #fff);
+  background: -o-linear-gradient(top left, #777799, #dedeff);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top left, #444, #fff);
+  background: -moz-linear-gradient(top left, #777799, #dedeff);
   /* For Firefox 3.6 to 15 */
   -webkit-margin-before: 0;
   -webkit-margin-after: 0; }
@@ -146,7 +146,7 @@ nav {
     height: 30px;
     margin: 10px; } }
 .project {
-  width: 100%;
+  width: 90%;
   margin: auto;
   margin-bottom: 35px;
   padding-top: 25px;
@@ -176,7 +176,7 @@ nav {
     flex-direction: row; }
 
   .projectImg, .projectText {
-    width: 50%;
+    width: 80%;
     display: -webkit-flex;
     display: flex;
     align-items: center; } }
@@ -196,7 +196,10 @@ nav {
   padding: 5px;
   background-color: #99ccff;
   color: black;
-  border-radius: 5px; }
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 6px black;
+  -moz-box-shadow: 2px 2px 6px black;
+  box-shadow: 2px 2px 6px black; }
 
 @media only screen and (min-width: 768px) {
   .skill {

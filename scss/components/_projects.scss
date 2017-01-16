@@ -1,5 +1,5 @@
 .project {
-    width: 100%;
+    width: 90%;
     margin: auto;
     margin-bottom: 35px;
     padding-top: 25px;
@@ -20,7 +20,6 @@
     }
 
 }
-
 .projectText {
     flex-direction: column;
     width: 80%;
@@ -34,7 +33,7 @@
         flex-direction: row;
     }
     .projectImg, .projectText {
-    width: 50%;
+    width: 80%;
     display: -webkit-flex;
     display: flex;
     align-items: center;
