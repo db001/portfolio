@@ -5,32 +5,20 @@ html, body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  background: #777799;
-  /* For browsers that don't support gradient */
-  background: linear-gradient(to top left, #777799, #dedeff);
-  background: -webkit-linear-gradient(bottom right, #777799, #dedeff);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top left, #777799, #dedeff);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top left, #777799, #dedeff);
-  /* For Firefox 3.6 to 15 */
   -webkit-margin-before: 0;
   -webkit-margin-after: 0; }
 
 h2 {
   text-align: center;
-  margin-top: 40px;
   font-family: "Righteous", cursive; }
 
 h3 {
   color: black;
-  margin: 0;
   margin-top: .75em;
   font-family: "Righteous", cursive; }
 
 p {
   text-align: center;
-  margin-top: .75em;
   font-size: 0.8em; }
 
 @media only screen and (min-width: 768px) {
@@ -40,20 +28,27 @@ a {
   text-decoration: none; }
 
 a:hover, a h3:hover {
-  color: #fff; }
+  color: #aaa; }
 
 hr {
   border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(153, 204, 255, 0), rgba(153, 204, 255, 0.75), rgba(153, 204, 255, 0)); }
+  height: 2px;
+  width: 90%;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
 
-#aboutme {
+.aboutme {
   width: 100%;
-  margin: auto; }
-  #aboutme p {
-    width: 80%;
+  margin: auto;
+  padding-bottom: 30px;
+  background-color: rgba(188, 228, 141, 0.5);
+  border: 1px solid transparent; }
+  .aboutme p {
+    width: 70%;
     margin: auto; }
 
+@media only screen and (min-width: 1024px) {
+  #aboutme p {
+    width: 60%; } }
 .jumbo {
   background-image: url("../images/computer_screen2_dark.png");
   background-size: cover;
@@ -96,19 +91,20 @@ nav {
 
 @media only screen and (min-width: 1024px) {
   .container {
-    width: 75%; } }
+    width: 70%; } }
 #brand {
   display: -webkit-flex;
-  display: flex; }
+  display: flex;
+  align-items: center; }
 
 #tagline {
   flex-direction: column;
   padding-left: 10px;
-  font-size: 10px; }
+  font-size: 12px; }
 
 @media only screen and (min-width: 768px) {
   #tagline {
-    font-size: 12px; } }
+    font-size: 16px; } }
 #logo {
   font-family: 'Righteous', cursive;
   font-size: 20px;
@@ -145,10 +141,34 @@ nav {
     width: 30px;
     height: 30px;
     margin: 10px; } }
+.my-projects {
+  background-color: #555;
+  padding-top: 15px;
+  color: white; }
+  .my-projects a {
+    border: 3px solid white;
+    margin: 10px 0 0 0;
+    height: 25px;
+    width: 150px;
+    border-radius: 25px;
+    line-height: 25px;
+    font-size: 0.85em;
+    color: white;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease; }
+  .my-projects a:hover {
+    border: 3px solid black;
+    background-color: rgba(188, 228, 141, 0.5);
+    color: black;
+    width: 175px; }
+
 .project {
   width: 90%;
   margin: auto;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   padding-top: 25px;
   display: -webkit-flex;
   display: flex;
@@ -158,6 +178,8 @@ nav {
 .projectImg, .projectText {
   display: -webkit-flex;
   display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
   align-items: center;
   margin: auto; }
   .projectImg img, .projectText img {
@@ -167,19 +189,22 @@ nav {
 .projectText {
   flex-direction: column;
   width: 80%; }
-  .projectText h2 {
-    color: black; }
+  .projectText h3 {
+    color: white; }
 
 @media only screen and (min-width: 768px) {
   .project {
     -ms-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+    width: 70%; }
 
   .projectImg, .projectText {
     width: 80%;
     display: -webkit-flex;
     display: flex;
-    align-items: center; } }
+    align-items: center; }
+    .projectImg p, .projectText p {
+      width: 80%; } }
 .skillsContainer {
   display: -webkit-flex;
   display: flex;
@@ -194,7 +219,7 @@ nav {
   font-size: 0.7em;
   margin: 5px 5px;
   padding: 5px;
-  background-color: #99ccff;
+  background-color: rgba(188, 228, 141, 0.5);
   color: black;
   border-radius: 5px;
   -webkit-box-shadow: 2px 2px 6px black;

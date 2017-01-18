@@ -1,8 +1,16 @@
-#aboutme {
+.aboutme {
     width: 100%;
     margin: auto;
+    padding-bottom: 30px;
+    background-color: $secondary;
+    border: 1px solid rgba(0, 0, 0, 0.0); // Needed to make background meet bottom of Jumbo.  Work out why!
     p {
-        width: 80%;
+        width: 70%;
         margin: auto;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #aboutme p {
+        width: 60%;
     }
 }

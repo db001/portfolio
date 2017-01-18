@@ -23,21 +23,22 @@ nav {
 }
 @media only screen and (min-width: 1024px) {
     .container {
-        width: 75%;
+        width: 70%;
     }
 }
 #brand {
     display: -webkit-flex;
     display: flex;
+    align-items: center;
 }
 #tagline {
     flex-direction: column;
     padding-left: 10px;
-    font-size: 10px;
+    font-size: 12px;
 }
 @media only screen and (min-width: 768px) {
     #tagline {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 #logo {

@@ -1,4 +1,4 @@
-var fadeInPoint = document.querySelector("#aboutme");
+var fadeInPoint = document.querySelector(".aboutme");
 
 window.onscroll = function() {
     var position = fadeInPoint.getBoundingClientRect();
