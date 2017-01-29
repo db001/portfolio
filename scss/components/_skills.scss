@@ -9,7 +9,9 @@
 }
 .skill {
     flex-shrink: 0.8;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    font-weight: bold;
     margin: 5px 5px;
     padding: 5px;
     background-color:  $secondary;
@@ -19,6 +21,6 @@
 }
 @media only screen and (min-width: 768px) {
     .skill {
-        font-size: 0.85em;
+        font-size: 0.7em;
     }
 }
