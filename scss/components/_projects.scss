@@ -12,14 +12,13 @@
         font-size: 0.85em;
         color: white;
         text-transform: uppercase;
-        font-weight: bold;
         @include transition(all 0.25s ease);
     }
     a:hover {
         border: 3px solid black;
         background-color: $secondary;
         color: black;
-        width: 200px;
+        width: 175px;
     }
 }
 
