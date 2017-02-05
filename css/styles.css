@@ -41,9 +41,9 @@ hr {
 .aboutme {
   width: 100%;
   margin: auto;
-  padding-bottom: 30px;
-  background-color: rgba(188, 228, 141, 0.5);
-  border: 1px solid transparent; }
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: rgba(188, 228, 141, 0.5); }
   .aboutme p {
     width: 70%;
     margin: auto; }
@@ -51,6 +51,10 @@ hr {
 @media only screen and (min-width: 1024px) {
   #aboutme p {
     width: 60%; } }
+span.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl; }
+
 .jumbo {
   background-image: url("../images/computer_screen2_dark.png");
   background-size: cover;
@@ -235,6 +239,26 @@ nav {
 @media only screen and (min-width: 768px) {
   .skill {
     font-size: 0.7em; } }
+.contact {
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+  height: 300px;
+  padding-top: 20px;
+  padding-left: 10%; }
+  .contact input[type=text], .contact textarea {
+    width: 80%;
+    border-radius: 10px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    font-family: "Open Sans", sans-serif; }
+  .contact textarea {
+    height: 50px; }
+  .contact input[type=submit] {
+    border-radius: 10px; }
+
 .footer {
   position: fixed;
   display: -webkit-flex;

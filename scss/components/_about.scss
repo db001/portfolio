@@ -1,9 +1,9 @@
 .aboutme {
     width: 100%;
     margin: auto;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     background-color: $secondary;
-    border: 1px solid rgba(0, 0, 0, 0.0); // Needed to make background meet bottom of Jumbo.  Work out why!
     p {
         width: 70%;
         margin: auto;
@@ -13,4 +13,8 @@
     #aboutme p {
         width: 60%;
     }
+}
+span.reverse {
+    unicode-bidi: bidi-override;
+    direction: rtl;
 }
