@@ -146,6 +146,7 @@ nav {
 .my-projects {
   background-color: #555;
   padding-top: 15px;
+  padding-bottom: 15px;
   color: white; }
   .my-projects a {
     border: 3px solid white;
@@ -247,7 +248,7 @@ nav {
   background-color: #ccc;
   font-size: 0.8em; }
   .footer a {
-    width: 33%;
+    width: 25%;
     margin-bottom: 0;
     padding: 5px 0;
     text-decoration: none;
