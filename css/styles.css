@@ -56,7 +56,7 @@ span.reverse {
   direction: rtl; }
 
 .jumbo {
-  background-image: url("../images/computer_screen2_dark.png");
+  background-image: url("../images/computer_screen2_dark_finished.png");
   background-size: cover;
   background-attachment: fixed;
   height: 300px;
