@@ -62,3 +62,5 @@ module.exports = function(grunt) {
 };
 
 // browserSync localhost:3000
+
+// test line to check git ssh is working
