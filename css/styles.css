@@ -163,10 +163,10 @@ nav {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease; }
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
   .my-projects a:hover {
     border: 3px solid black;
     background-color: rgba(188, 228, 141, 0.5);
@@ -241,7 +241,8 @@ nav {
     font-size: 0.7em; } }
 .contact {
   background-color: rgba(188, 228, 141, 0.5);
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-bottom: 40px; }
 
 form {
   text-transform: uppercase;
