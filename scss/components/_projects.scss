@@ -3,7 +3,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     color: white;
-    a {
+    .projLink {
         border: 3px solid white;
         margin: 10px 0 0 0;
         height: 25px;
@@ -16,7 +16,7 @@
         font-weight: bold;
         @include transition(all 0.5s ease);
     }
-    a:hover {
+    .projLink:hover {
         border: 3px solid black;
         background-color: $secondary;
         color: black;

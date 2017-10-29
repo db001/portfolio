@@ -1,0 +1,144 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Movies Front End</title>
+
+    <link rel="stylesheet" type="text/css" href="css\prefixed.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src=".\scripts\ugly.js"></script>
+</head>
+
+<body>
+
+    <div class="body-container">
+
+    <div class="container">
+
+    <h1 id="mainHead">Find a film</h1>
+
+    <section class="searchContainer">
+        <div class="selectArea">
+            <div id="certification">
+                <h4>Choose a certification</h4>
+                <div id="certSelect">
+                    <!-- Added by JS
+                    <li class='cert' data-certValue='certification'>
+                        certification
+                        <div class='certDescription'>meaning</div>
+                    </li>
+                    -->
+                </div>
+                <label for="showDescription">Show certification meaning</label>
+                <input type="checkbox" id="showCertDescription">
+                <div id="certDescriptionBox">Hover over a certification to show its meaning</div>
+                <fieldset>
+                    <p>Include other certificates?</p>
+                    <label>Lower</label>
+                    <input class="checkbox" type="checkbox" name="lesserCerts" value="false"id="includeLesserCerts">
+                    <label>Higher</label>
+                    <input class="checkbox" type="checkbox" name="higherCerts" value="false" id="includeHigherCerts">
+                </fieldset> 
+            </div>
+
+            <div id="genres">
+                <h4>Choose a genre</h4>
+                <div id="genreSelect">
+                    <!-- added by JS
+                    <div class='genre' data-genreId='${ele.id}'>${ele.name}</div>
+                    -->
+                </div>
+            </div>
+
+            <div id="releaseYear">
+                <h4>Choose a year</h4>
+                <label>Release year</label>
+                <input type="number" name="releaseYear" id="releaseYearInput" min="0" max="2017">
+                <fieldset class="beforeAfterYears">
+                    <p>Include:</p>
+                    <label>Previous years</label>
+                    <input class="checkbox" type="checkbox" name="yearsBefore" value="false" id="yearsBefore">
+                    <label>Following years</label>
+                    <input class="checkbox" type="checkbox" name="yearsAfter" value="false" id="yearsAfter">
+                </fieldset>
+            </div>
+            <div class="btn-container">
+                <div class="btn" type="button" id="searchButton">Search</div>
+                <div class="btn" type="button" id="resetButton">Reset</div>
+            </div>     
+            
+        </div>
+        <!--  SelectArea close -->
+
+    </section>
+
+    <div id="newSearch" class="hidden">New Search</div>
+
+    <section>
+        <div class="results"></div>
+
+        <!-- Added by JS
+        <div class="result" data-film_id="${ele.id}">
+            <div>
+                <img src="https://image.tmdb.org/t/p/w92/${ele.poster_path}">
+                <h4 class="film-title">${ele.title}</h4>
+            </div>
+        </div>
+        -->
+
+    </section>
+
+        <div id="movieModal">
+        <!-- Added by JS
+        <div id="movieModal">  
+            <div class="modal-content">
+                <div class="movie-headlines">            
+                    <div><img src="https://image.tmdb.org/t/p/w92/${data.poster_path}"></div>
+                    <div class="modalText">
+                        <h4 id="modal-heading">${data.original_title}</h4>
+                        <h5>${data.tagline}</h5>
+                        <h6>${year}</h6>           
+                    </div>
+                    <span class="close">x</span>  
+                </div>
+                <p id="modal-description">${data.overview}</p>
+                <div class="movie-details">
+                    <p>${data.production_companies[0].name}</p>
+                    <a class="movie-link" href="${data.homepage}" target="_blank">Homepage</p>
+                </div>
+            </div>          
+        </div>
+        -->
+        </div>
+
+    </div> <!-- container close -->
+    
+    </div> <!-- body container close -->
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src=".\scripts\ugly.js"></script>
+
+</body>
+
+</html>
